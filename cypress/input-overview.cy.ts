@@ -2,7 +2,7 @@ import { CommonModule } from "@angular/common";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { InputOverviewExample } from "src/example/input-overview-example";
 
-describe("input-overview.cy.ts", () => {
+describe(InputOverviewExample.name, () => {
     it("playground", () => {
         cy.mount(InputOverviewExample, {
             componentProperties: {

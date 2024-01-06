@@ -25,7 +25,6 @@ import { CommonModule } from "@angular/common";
 export class InputOverviewExample {
     decimalFormControl: FormControl;
     previousValidValue: number;
-    decimalCtrl: HTMLInputElement;
     emittedValue: number | undefined;
 
     @Input() label = "Favorite digit";
@@ -39,12 +38,6 @@ export class InputOverviewExample {
         this.decimalFormControl.valueChanges.subscribe((value) => {
             this.amountChange(value);
         });
-    }
-
-    ngOnInit(): void {
-        this.decimalCtrl = document.getElementById(
-            "decimalCtrl"
-        ) as HTMLInputElement;
     }
 
     amountChange(event: any): void {
