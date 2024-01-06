@@ -8,19 +8,13 @@
         type="number"
         step="0.01"
         lang="fr"
-        (blur)="onBlur()"
         data-cy="decimal-ctrl"
-        [errorStateMatcher]="matcher"
     />
-    <mat-error>{{ decimalFormControl.errors?.description}}</mat-error>
 </mat-form-field>
-<!-- [value]="inValue" -->
-<!-- (keyup)="changed($event)" -->
+
 <div>Form Value: {{ this.decimalFormControl.value }}</div>
 
 <div>Emitted Value: {{ emittedValue }}</div>
-<br>
-<button (click)="onChangeLabel()">Validate</button>
 
 <!-- Copyright 2023 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
